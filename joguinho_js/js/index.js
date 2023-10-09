@@ -32,7 +32,13 @@ const loop = setInterval(() => {
         mario.style.left = '42px'
 
         clearInterval(loop);
+        reload_.style.display = 'block';
 
     }
 }, 20)
+
+function reload(){
+    window.location.reload(true);
+}
+
 document.addEventListener('keydown', jump);
